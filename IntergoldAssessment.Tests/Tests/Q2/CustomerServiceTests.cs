@@ -10,7 +10,7 @@ namespace InterGoldAssessment.Tests.Tests.Q2
         public async Task GetCustomerInfo_ReturnsCustomerInfoDto_WhenCustomerExists()
         {
             var options = new DbContextOptionsBuilder<AppDbContext>()
-                .UseInMemoryDatabase(databaseName: "TestDb")
+                .UseInMemoryDatabase(databaseName: Guid.NewGuid().ToString())
                 .Options;
 
             var created_at = DateTime.UtcNow;
@@ -52,7 +52,7 @@ namespace InterGoldAssessment.Tests.Tests.Q2
         public static async Task GetCustomerInfo_ReturnsNull_WhenCustomerDoesNotExist()
         {
             var options = new DbContextOptionsBuilder<AppDbContext>()
-                .UseInMemoryDatabase(databaseName: "TestDb")
+                .UseInMemoryDatabase(databaseName: Guid.NewGuid().ToString())
                 .Options;
 
             using (var context = new AppDbContext(options))

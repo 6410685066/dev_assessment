@@ -1,5 +1,14 @@
 # Author: Korawat Plainsuwan
 
+# Setup
+``` bash
+git clone https://github.com/6410685066/dev_assessment.git
+cd intergold-assessment        
+dotnet restore                 
+dotnet build                   
+dotnet test                    
+```
+
 ## Part 1: Analyze Legacy Code
 ### 1. In your own words, what is the primary purpose of this function?
 - The primary purpose of the function is to connect to the database and retrieve customer information based on the specified customer ID.
