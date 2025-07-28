@@ -3,6 +3,7 @@
 # Setup
 ``` bash
 git clone https://github.com/6410685066/dev_assessment.git
+cd dev_assessment
 cd intergold-assessment        
 dotnet restore                 
 dotnet build                   
